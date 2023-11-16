@@ -105,4 +105,19 @@ class Users extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	public function validatePassword($password)
+	{
+		return CPasswordHelper::verifyPassword($password,$this->password_hash);
+	}
+	protected function beforeSave()
+	{
+		if (parent::beforeSave()) {
+			// Hanya hash password jika record baru atau password diubah
+			if ($this->isNewRecord || $this->getScenario() == 'update') {
+				$this->password_hash = CPasswordHelper::hashPassword($this->password);
+			}
+			return true;
+		}
+		return false;
+	}
 }
