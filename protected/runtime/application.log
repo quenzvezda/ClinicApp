@@ -1,0 +1,154 @@
+2023/11/15 16:37:59 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in C:\laragon\www\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\laragon\www\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\laragon\www\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\laragon\www\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\laragon\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\laragon\www\framework\gii\generators\crud\CrudCode.php(44): CModule->__get('db')
+#5 C:\laragon\www\framework\web\CFormModel.php(39): CrudCode->init()
+#6 C:\laragon\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\laragon\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\laragon\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\laragon\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\laragon\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\laragon\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\laragon\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\laragon\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 C:\laragon\www\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\laragon\www\ClinicApp\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/crud/index
+HTTP_REFERER=http://clinicapp.test/index.php?r=gii/default/index
+---
+2023/11/15 16:38:11 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in C:\laragon\www\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\laragon\www\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\laragon\www\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\laragon\www\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\laragon\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\laragon\www\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 C:\laragon\www\framework\web\CFormModel.php(39): ModelCode->init()
+#6 C:\laragon\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\laragon\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\laragon\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\laragon\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\laragon\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\laragon\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\laragon\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\laragon\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 C:\laragon\www\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\laragon\www\ClinicApp\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model/index
+HTTP_REFERER=http://clinicapp.test/index.php?r=gii/default/index
+---
+2023/11/15 16:38:58 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in C:\laragon\www\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\laragon\www\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\laragon\www\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\laragon\www\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\laragon\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\laragon\www\framework\gii\generators\crud\CrudCode.php(44): CModule->__get('db')
+#5 C:\laragon\www\framework\web\CFormModel.php(39): CrudCode->init()
+#6 C:\laragon\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\laragon\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\laragon\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\laragon\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\laragon\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\laragon\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\laragon\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\laragon\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 C:\laragon\www\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\laragon\www\ClinicApp\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/crud/index
+HTTP_REFERER=http://clinicapp.test/index.php?r=gii/default/index
+---
+2023/11/15 16:40:38 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in C:\laragon\www\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\laragon\www\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\laragon\www\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\laragon\www\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\laragon\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\laragon\www\framework\gii\generators\crud\CrudCode.php(44): CModule->__get('db')
+#5 C:\laragon\www\framework\web\CFormModel.php(39): CrudCode->init()
+#6 C:\laragon\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\laragon\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\laragon\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\laragon\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\laragon\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\laragon\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\laragon\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\laragon\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 C:\laragon\www\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\laragon\www\ClinicApp\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/crud/index
+HTTP_REFERER=http://clinicapp.test/index.php?r=gii/default/index
+---
+2023/11/15 16:40:57 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in C:\laragon\www\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\laragon\www\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\laragon\www\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\laragon\www\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\laragon\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\laragon\www\framework\gii\generators\crud\CrudCode.php(44): CModule->__get('db')
+#5 C:\laragon\www\framework\web\CFormModel.php(39): CrudCode->init()
+#6 C:\laragon\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\laragon\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\laragon\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\laragon\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\laragon\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\laragon\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\laragon\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\laragon\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 C:\laragon\www\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\laragon\www\ClinicApp\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/crud/index
+HTTP_REFERER=http://clinicapp.test/index.php?r=gii/default/index
+---
+2023/11/15 16:42:10 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in C:\laragon\www\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\laragon\www\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\laragon\www\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\laragon\www\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\laragon\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\laragon\www\framework\gii\generators\crud\CrudCode.php(44): CModule->__get('db')
+#5 C:\laragon\www\framework\web\CFormModel.php(39): CrudCode->init()
+#6 C:\laragon\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\laragon\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\laragon\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\laragon\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\laragon\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\laragon\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\laragon\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\laragon\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 C:\laragon\www\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\laragon\www\ClinicApp\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/crud/index
+HTTP_REFERER=http://clinicapp.test/index.php?r=gii/default/index
+---
+2023/11/15 16:52:00 [error] [exception.CHttpException.404] CHttpException: Unable to find the code you requested. in C:\laragon\www\framework\gii\CCodeGenerator.php:90
+Stack trace:
+#0 C:\laragon\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionCode()
+#1 C:\laragon\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\laragon\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\laragon\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\laragon\www\framework\web\CWebApplication.php(282): CController->run('code')
+#5 C:\laragon\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/code')
+#6 C:\laragon\www\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\laragon\www\ClinicApp\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php?r=gii/model/code&id=0
+HTTP_REFERER=http://clinicapp.test/index.php?r=gii/model/index
+---
+2023/11/15 17:11:50 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "users". in C:\laragon\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\laragon\www\framework\web\CWebApplication.php(141): CWebApplication->runController('users')
+#1 C:\laragon\www\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\laragon\www\ClinicApp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=users
+---
