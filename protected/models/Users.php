@@ -97,4 +97,17 @@ class Users extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function getRoleName() {
+		$assignments = Authassignment::model()->findAllByAttributes(array('userid' => $this->user_id));
+		if ($assignments) {
+			$roles = array();
+			foreach ($assignments as $assignment) {
+				$roles[] = $assignment->itemname;
+			}
+			return implode(', ', $roles); // Mengembalikan semua role dalam bentuk string
+		}
+		return 'No role';
+	}
+	
 }

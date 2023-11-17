@@ -21,4 +21,8 @@
     <?php echo CHtml::encode($data->employee ? $data->employee->employee_name : "No employee linked"); ?>
     <br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('role')); ?>:</b>
+    <?php echo CHtml::encode($data->getRoleName()); ?>
+    <br />
+
 </div>
