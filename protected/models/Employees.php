@@ -32,6 +32,8 @@ class Employees extends CActiveRecord
 			array('employee_name', 'required'),
 			array('region_id', 'numerical', 'integerOnly'=>true),
 			array('employee_name', 'length', 'max'=>100),
+			array('email', 'email'),
+            array('email', 'unique', 'message' => 'Email ini sudah digunakan.'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('employee_id, employee_name, region_id', 'safe', 'on'=>'search'),

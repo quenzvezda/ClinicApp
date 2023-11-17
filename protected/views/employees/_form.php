@@ -26,6 +26,12 @@
 	</div>
 
 	<div class="row">
+        <?php echo $form->labelEx($model,'email'); ?>
+        <?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>255)); ?>
+        <?php echo $form->error($model,'email'); ?>
+    </div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'region_id'); ?>
 		<?php echo $form->textField($model,'region_id'); ?>
 		<?php echo $form->error($model,'region_id'); ?>

@@ -13,6 +13,10 @@
 	<?php echo CHtml::encode($data->employee_name); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('email')); ?>:</b>
+	<?php echo CHtml::encode($data->email); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('region_id')); ?>:</b>
 	<?php echo CHtml::encode($data->region_id); ?>
 	<br />

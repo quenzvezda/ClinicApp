@@ -23,6 +23,7 @@ $this->menu=array(
 	'attributes'=>array(
 		'employee_id',
 		'employee_name',
+		'email',
 		'region_id',
 	),
 )); ?>
