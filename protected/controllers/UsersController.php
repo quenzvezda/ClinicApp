@@ -125,7 +125,9 @@ class UsersController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-		$employees = CHtml::listData(Employees::model()->findAll(), 'employee_id', 'employee_name');
+		$employees = CHtml::listData(Employees::model()->findAll(), 'employee_id', function($employee) {
+			return $employee->employee_name . ' (' . $employee->email . ')';
+		});
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -139,7 +141,7 @@ class UsersController extends Controller
 
 		$this->render('update',array(
 			'model'=>$model,
-			'employees'=>$employees,
+			'employees' => $employees,
 		));
 	}
 

@@ -29,6 +29,7 @@ class Users extends CActiveRecord
 			array('username, password', 'required'),
 			array('username', 'length', 'max'=>50),
 			array('password', 'length', 'max'=>255),
+			array('employee_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('user_id, username, password', 'safe', 'on'=>'search'),

@@ -17,5 +17,8 @@
 	<?php echo CHtml::encode($data->password); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('employee name')); ?>:</b>
+    <?php echo CHtml::encode($data->employee ? $data->employee->employee_name : "No employee linked"); ?>
+    <br />
 
 </div>
