@@ -18,8 +18,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('region_id')); ?>:</b>
-	<?php echo CHtml::encode($data->region_id); ?>
+	<?php echo CHtml::encode($data->region ? $data->region->region_name : 'No region'); ?>
 	<br />
-
 
 </div>

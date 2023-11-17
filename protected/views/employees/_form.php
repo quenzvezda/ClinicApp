@@ -31,12 +31,6 @@
         <?php echo $form->error($model,'email'); ?>
     </div>
 
-	<!-- <div class="row">
-		<?php echo $form->labelEx($model,'region_id'); ?>
-		<?php echo $form->textField($model,'region_id'); ?>
-		<?php echo $form->error($model,'region_id'); ?>
-	</div> -->
-
 	<div class="row">
 		<?php echo $form->labelEx($model,'region'); // Label untuk region ?>
 		<?php
