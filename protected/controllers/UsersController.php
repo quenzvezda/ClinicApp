@@ -84,6 +84,10 @@ class UsersController extends Controller
 	
 		// Mengambil daftar roles dari authitem
 		$roles = CHtml::listData(AuthItem::model()->findAll('type=:type', array(':type'=>2)), 'name', 'name');
+
+		$employees = CHtml::listData(Employees::model()->findAll(), 'employee_id', function($employee) {
+			return $employee->employee_name . ' (' . $employee->email . ')';
+		});
 	
 		if (isset($_POST['Users'])) {
 			$model->attributes = $_POST['Users'];
@@ -105,6 +109,7 @@ class UsersController extends Controller
 		$this->render('create', array(
 			'model' => $model,
 			'roles' => $roles,
+			'employees' => $employees,
 		));
 	}
 	
@@ -120,6 +125,7 @@ class UsersController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
+		$employees = CHtml::listData(Employees::model()->findAll(), 'employee_id', 'employee_name');
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -133,6 +139,7 @@ class UsersController extends Controller
 
 		$this->render('update',array(
 			'model'=>$model,
+			'employees'=>$employees,
 		));
 	}
 

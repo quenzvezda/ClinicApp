@@ -15,5 +15,6 @@ $this->menu=array(
 $this->renderPartial('_form', array(
     'model' => $model,
     'roles' => $roles, // Tambahkan ini
+	'employees'=>$employees,
 ));
 ?>

@@ -38,6 +38,12 @@
 		<?php endif; ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'employees'); ?>
+		<?php echo $form->dropDownList($model, 'employee_id', $employees, array('prompt' => 'Select Employee')); ?>
+		<?php echo $form->error($model,'employee_id'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
