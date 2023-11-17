@@ -28,7 +28,7 @@ class RegionsController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','search'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -142,6 +142,21 @@ class RegionsController extends Controller
 			'model'=>$model,
 		));
 	}
+
+	public function actionSearch($term) {
+		$criteria = new CDbCriteria;
+		$criteria->compare('region_name', $term, true);
+		$regions = Regions::model()->findAll($criteria);
+	
+		$result = array();
+		foreach ($regions as $region) {
+			$result[] = array('label' => $region->region_name, 'id' => $region->region_id);
+		}
+	
+		echo CJSON::encode($result);
+		Yii::app()->end();
+	}
+	
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.

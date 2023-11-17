@@ -51,6 +51,7 @@ return array(
 			'rules'=>array(
 				'login'=>'site/login',  // menambahkan aturan untuk 'login'
 				'admin'=>'site/admin',  // menambahkan aturan untuk 'admin'
+				'regions/search'=>'regions/search',
 				// aturan lainnya...
 			),
 		),

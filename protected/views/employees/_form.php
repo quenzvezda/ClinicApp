@@ -31,11 +31,32 @@
         <?php echo $form->error($model,'email'); ?>
     </div>
 
-	<div class="row">
+	<!-- <div class="row">
 		<?php echo $form->labelEx($model,'region_id'); ?>
 		<?php echo $form->textField($model,'region_id'); ?>
 		<?php echo $form->error($model,'region_id'); ?>
+	</div> -->
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'region'); // Label untuk region ?>
+		<?php
+		$this->widget('zii.widgets.jui.CJuiAutoComplete', array(
+			'name' => 'region_autocomplete',
+			'sourceUrl' => array('regions/search'), // URL yang mengembalikan data JSON
+			'options' => array(
+				'select' => 'js:function(event, ui) {
+					$("#hidden_region_id").val(ui.item.id);
+				}'
+			),
+			'htmlOptions' => array(
+				'size' => '40'
+			),
+		));
+		?>
+		<?php echo $form->hiddenField($model, 'region_id', array('id' => 'hidden_region_id')); ?>
+		<?php echo $form->error($model,'region_id'); ?>
 	</div>
+
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
